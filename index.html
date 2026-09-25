@@ -501,9 +501,20 @@
   }
 
   @media (max-width: 720px) {
-    header.nav { padding-left: 24px; padding-right: 24px; flex-direction: column; gap: 20px; }
+    header.nav { padding-left: 24px; padding-right: 24px; flex-direction: column; align-items: flex-start; gap: 14px; }
     section { padding-left: 24px; padding-right: 24px; }
     footer { padding-left: 24px; padding-right: 24px; }
+    section#welcome {
+      justify-content: flex-start;
+      min-height: auto;
+      padding-top: 280px;
+      padding-bottom: 80px;
+    }
+    .nav-right { flex-wrap: wrap; gap: 14px; }
+  }
+
+  @media (max-width: 400px) {
+    section#welcome { padding-top: 300px; }
   }
 </style>
 </head>
@@ -569,7 +580,7 @@
           <span class="when">Expected May 2029</span>
         </div>
         <p class="role">B.A. International and Public Affairs, B.A. Computer Science, 4.0/4.0 GPA — Providence, RI</p>
-        <p class="courses-link"><a href="courses.html" target="_blank" rel="noopener">View full course list →</a></p>
+        <p class="courses-link"><a href="courses/" target="_blank" rel="noopener">View full course list →</a></p>
       </div>
     </div>
 
