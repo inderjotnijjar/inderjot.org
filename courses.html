@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Coursework — Inderjot Singh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0c0f;
+    --text: #f2f1ed;
+    --muted: #9ca0a8;
+    --muted-2: #6b6f78;
+    --accent: #3454d1;
+    --accent-dim: rgba(52,84,209,0.35);
+    --sun: #ff7a1f;
+    --divider: rgba(255,255,255,0.08);
+    --section-font: 'Jost', sans-serif;
+    --name-font: 'Montserrat', sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--section-font);
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 72px 24px 100px;
+  }
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: var(--muted);
+    text-decoration: none;
+    margin-bottom: 40px;
+  }
+  .back-link:hover { color: var(--text); }
+  h1 {
+    font-family: var(--name-font);
+    font-weight: 500;
+    font-size: clamp(28px, 5vw, 38px);
+    margin: 0 0 8px;
+    letter-spacing: 0.01em;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 15px;
+    margin: 0 0 48px;
+    max-width: 56ch;
+    line-height: 1.6;
+  }
+  .term-block { margin-bottom: 40px; }
+  .term-title {
+    font-family: var(--name-font);
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--sun);
+    margin: 0 0 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--divider);
+  }
+  .term-title.current { color: var(--accent); }
+  .group-title {
+    font-family: var(--name-font);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    color: var(--text);
+    margin: 32px 0 14px;
+    padding-left: 14px;
+    border-left: 3px solid var(--accent);
+  }
+  .group-title:first-of-type { margin-top: 22px; }
+  ul.course-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.course-list li {
+    display: flex;
+    gap: 16px;
+    align-items: baseline;
+    font-size: 16px;
+    color: var(--text);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--divider);
+    line-height: 1.5;
+  }
+  ul.course-list li:last-child { border-bottom: none; }
+  .course-code {
+    flex-shrink: 0;
+    width: 120px;
+    font-family: var(--name-font);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    letter-spacing: 0.02em;
+  }
+  .course-name { color: var(--text); }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--divider);
+    font-size: 13px;
+    color: var(--muted-2);
+  }
+  footer a { color: var(--muted-2); }
+  @media (max-width: 480px) {
+    ul.course-list li { flex-direction: column; gap: 4px; }
+    .course-code { width: auto; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back-link" href="index.html">&larr; Back to inderjot.org</a>
+    <h1>Coursework</h1>
+    <p class="subtitle">The full list of courses I've taken at Brown University, in International &amp; Public Affairs, Computer Science, and beyond.</p>
+
+    <div class="term-block">
+      <p class="term-title current">Currently Taking</p>
+      <ul class="course-list">
+        <li><span class="course-code">IAPA 1002</span><span class="course-name">Foundations of Policy and Governance</span></li>
+        <li><span class="course-code">CSCI 0410</span><span class="course-name">Foundations of AI and Machine Learning</span></li>
+        <li><span class="course-code">POLS 1455</span><span class="course-name">Crime, Punishment, and Politics</span></li>
+        <li><span class="course-code">DATA/IAPA 1250</span><span class="course-name">Artificial Intelligence Law and Policy</span></li>
+      </ul>
+    </div>
+
+    <div class="term-block">
+      <p class="term-title">Completed</p>
+
+      <p class="group-title">Policy, Politics &amp; Society</p>
+      <ul class="course-list">
+        <li><span class="course-code">POLS 1085</span><span class="course-name">Injustice</span></li>
+        <li><span class="course-code">PHIL 0555</span><span class="course-name">Choice, Commerce, and Conflict: An Introduction to Philosophy, Politics, and Economics</span></li>
+        <li><span class="course-code">IAPA 0400</span><span class="course-name">Fiscal Plumbing 101: The American Tax State in Comparative and Historical Perspective</span></li>
+        <li><span class="course-code">SOC 0300N</span><span class="course-name">Social Inequality: Change and Continuity in the U.S.</span></li>
+        <li><span class="course-code">SOC 1100</span><span class="course-name">Introductory Statistics for Social Research</span></li>
+      </ul>
+
+      <p class="group-title">Economics</p>
+      <ul class="course-list">
+        <li><span class="course-code">ECON 0110</span><span class="course-name">Principles of Economics</span></li>
+        <li><span class="course-code">ECON 1110</span><span class="course-name">Intermediate Microeconomics</span></li>
+      </ul>
+
+      <p class="group-title">Computer Science &amp; Technical</p>
+      <ul class="course-list">
+        <li><span class="course-code">CSCI 0150</span><span class="course-name">Introduction to Object-Oriented Programming and Computer Science</span></li>
+        <li><span class="course-code">CSCI 0200</span><span class="course-name">Program Design with Data Structures and Algorithms</span></li>
+        <li><span class="course-code">MATH 0520</span><span class="course-name">Linear Algebra</span></li>
+      </ul>
+    </div>
+
+    <footer>
+      Inderjot Singh · <a href="index.html">inderjot.org</a>
+    </footer>
+  </div>
+</body>
+</html>
